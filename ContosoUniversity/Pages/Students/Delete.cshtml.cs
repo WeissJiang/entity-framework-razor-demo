@@ -23,7 +23,7 @@ namespace ContosoUniversity.Pages.Students
         }
 
         [BindProperty]
-        public Student Student { get; set; };
+        public Student Student { get; set; } = default!;
         public string ErrorMessage { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id, bool? saveChangesError = false)
